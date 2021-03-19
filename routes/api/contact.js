@@ -14,7 +14,7 @@ router.get('/test', (req, res) => res.json({ msg: 'Contact is  Workking' }))
 // @route   GET api/contact/
 // @desc    Register user
 // @access  Public
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
   const { errors, isValid } = validateContactInput(req.body)
 
   // Check Validation
