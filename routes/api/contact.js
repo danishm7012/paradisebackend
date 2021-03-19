@@ -9,7 +9,7 @@ const Contact = require('../../models/Contact')
 // @route   GET api/users/test
 // @desc    Tests users route
 // @access  Public
-router.get('/test', (req, res) => res.json({ msg: 'Contact Works' }))
+router.get('/test', (req, res) => res.json({ msg: 'Contact is  Workking' }))
 
 // @route   GET api/contact/
 // @desc    Register user
