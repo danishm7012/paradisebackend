@@ -36,6 +36,7 @@ router.post('/', (req, res) => {
   new Career(CareerFields)
     .save()
     .then(() => res.status(200).json({ success: 'Submitted Successfully!' }))
+  console.log('contact')
 })
 
 module.exports = router
