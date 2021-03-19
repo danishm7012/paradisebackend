@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
   new Newslatter(NewsFields)
     .save()
     .then(() => res.status(200).json({ success: 'Submitted Successfully!' }))
-    .catch((e) => res.status(400).json(e))
+    .catch((err) => res.status(404).json(err))
 })
 
 module.exports = router
