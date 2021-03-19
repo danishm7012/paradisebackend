@@ -35,6 +35,7 @@ router.post('/add', (req, res) => {
   new Contact(ContactFields)
     .save()
     .then(() => res.status(200).json({ success: 'Submitted Successfully!' }))
+    .catch((e) => res.status(400).json(e))
 })
 
 module.exports = router
